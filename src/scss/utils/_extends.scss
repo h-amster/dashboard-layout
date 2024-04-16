@@ -1,0 +1,32 @@
+%visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+%underline {
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    height: 1px;
+    width: 100%;
+    background-color: currentColor;
+    transform: scale(0);
+    transition: transform $effectDuration;
+    transform-origin: left;
+  }
+
+  &:hover::after {
+    transform: scale(1);
+  }
+}

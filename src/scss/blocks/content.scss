@@ -1,0 +1,107 @@
+.content {
+  padding: 29px 40px 41px 38px;
+  width: 100%;
+  background-color: $colorWhite;
+  border-radius: 30px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 13px;
+    margin-bottom: 40px;
+
+    @media (max-width: 640px) {
+      flex-direction: column;
+      gap: 30px;
+      align-items: start;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  &__title {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: -0.01em;
+    color: $colorBlack;
+  }
+
+  &__subtitle {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    color: #16c098;
+  }
+
+  &__input-label {
+    position: relative;
+    margin-right: 13px;
+  }
+
+  &__input {
+    width: 216px;
+    padding: 10px 10px 10px 40px;
+    border-radius: 10px;
+    background-color: $colorBg;
+    border: none;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: -0.01em;
+
+    &::placeholder {
+      color: #b5b7c0;
+    }
+
+    &:focus {
+      color: $colorBlack;
+    }
+  }
+
+  &__input-svg {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+  }
+
+  &__input-path {
+    stroke: #7E7E7E;
+  }
+
+  &__table-container {
+    margin-bottom: 30px;
+    overflow-x: auto;
+  }
+
+  &__table {
+    min-width: 750px;
+
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1300px) {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  &__footer-text {
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.01em;
+    color: #b5b7c0;
+  }
+}

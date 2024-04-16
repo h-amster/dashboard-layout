@@ -1,0 +1,30 @@
+.pagination {
+  display: flex;
+  gap: 12px;
+
+  &__button {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    width: 26px;
+    height: 24px;
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    color: #404b52;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    transition-property: border, background-color, color;
+    transition-duration: $effectDuration;
+
+    &--active {
+      border: 1px solid #5932ea;
+      background-color: #5932ea;
+      color: #fff;
+    }
+  }
+}

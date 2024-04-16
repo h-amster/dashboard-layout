@@ -1,0 +1,13 @@
+.page {
+  scroll-behavior: smooth;
+  font-family: $font-family;
+
+  &__body {
+    background-color: $colorBg;
+    display: flex;
+
+    &--locked {
+      overflow: hidden;
+    }
+  }
+}
